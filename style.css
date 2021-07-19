@@ -1,4 +1,4 @@
-.page {
+/* .menu-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,6 +8,20 @@
     min-width: 1200px;
     line-height: 1.75;
     letter-spacing: 0.15em;
+} */
+
+.page-wrapper {
+    width: 100%;
+    background-color: #eaeaea;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 50px;
+    height: 8000px;
+}
+
+.page {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;    
 }
 
 li, a{
@@ -15,35 +29,25 @@ li, a{
     text-decoration: none;
 } 
 
-.line {
+.menu-bar {
     display: flex;
-    Justify-content: space-between;    
-    right: 162px;  
+    Justify-content: space-between;  
+    align-items: center;  
+    width: 90%;
+    padding: 71px 5% 30px 5%;
     font-size: 14px;
     line-height: 1.2;
     font-weight: 700;
-    text-transform: uppercase;
-    margin: auto;
-    min-width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 71px;
-    padding-bottom: 30px;
     position: sticky;
     top: -71px;
-    }
-
-.home ul {
-    padding: 0;
-    margin: 0;
+    background-color: #fff;
 }
 
-.meny1{
+.main-menu {
     display: flex;
-    text-align: center;
-    vertical-align: middle;
+
 }
-.meny li{
+.menu li{
     display: flex;
     justify-content: flex-end;
     margin-left: 45px;
@@ -51,34 +55,38 @@ li, a{
     width: auto;
     float: left;
   }
-.meny a {
+
+.menu a {
     color: #313131;
     line-height: 1.2;
     float: right;
   } 
-.home1 a{
+.menu a:hover {
+    color: #983a42;
+}
+
+.home-page a{
     color: #983a42;
   }
-.h1 {
+
+.basic-information {
     display: flex;
-    justify-content: center;
-    padding-top: 30px;
+    width: 90%;
+    padding: 30px 5% 0 5%;
     height: 665px;
-    min-width: 1200px;
     }
 
-.dogh1{
-    display: flex;
-    background: url(img/dogh1.jpg) no-repeat;
-    background-size: contain;
+.heading {
+    background: url(assets/dogh1.jpg) no-repeat;
+    /* background-size: contain; */
     background-size: cover;
-    width: 75%;
-    font-size: 23px;
+    width: 80%;
+    font-size: 46px;
     font-family: 'Montserrat';
     font-weight: 700;
-    }
+}
 
-.dogh1 h1 {
+.heading h1 {
     margin: 0px; 
     letter-spacing: 0.16em;
     width: 100%;
@@ -86,42 +94,45 @@ li, a{
     margin-right: 28px;
 }
 
-.span1 {
+.heading1 {
     color: #313131;
 }
 
-.span2{
+.heading2{
     color: #fff;
 }
 
-.span34{
+.heading3-5{
     display: flex;
+    align-items: center;
 }
 
-.span3{
-    display: block;
+.heading3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #cfcfcf;;
     width: 65px;
     height: 65px;
+    padding-left: 10px;
     background-color: #fff;
-    border-radius: 50%;
-    text-align: center;    
-    margin-right: 20px;
-    padding-left: 9px;
-    padding-bottom: 15px;
+    border-radius: 50%;  
+    margin-right: 10px;  
+   
 }
 
-.span4 {
-    display: block;
+.heading4 {
     color: #313131;
+    padding-left: 20px;
 }
 
-.span5{
-    display: block;
+.heading5{
+    display: flex;
+    justify-content: flex-start;
     color: #fff;
 }
 
-.span6{
+.heading6{
     display: block;
     font-size: 19px;
     font-weight: 700;
@@ -130,10 +141,10 @@ li, a{
     transition: .2s;
     padding-top: 100px;
 }
-.span6 a{
+.heading6 a{
     color: #fff;
 }
-.span6 p{
+.heading6 p{
     margin: 0px;
 }
 
@@ -141,18 +152,23 @@ li, a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 25%;
-    padding: 0px 15px;
+    width: 17%;
+    padding-left: 3%;
+    
 }
+
 .contact h4{
     margin: 0px;
     font-size: 16px;
 }
+
 .contact_column1{
     height: 97px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    justify-content: center;
     
 }
+
 .contact_column1 ul {
     display: flex;
     align-items: center;   
@@ -160,9 +176,11 @@ li, a{
     margin: 0px;
     margin-top: 40px;
 }
+
 .contact_column1 li{
     padding: 0px 9px;
 }
+
 .contact_column1 img{
     display: flex;
     align-items: center;
@@ -180,12 +198,12 @@ li, a{
 .contact_column2 {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
     height: 145px;
     font-size: 18px;
     line-height: 1.75;
     margin-top: 80px;
+    justify-content: center;
 }
 
 .contact_column2 a{
@@ -194,22 +212,27 @@ li, a{
 }
 .contact_column2_tel {
     margin-top: 40px;
+    display: flex;
     align-items: flex-start;
 }
 .contact_column2_mail { 
     margin-top: 10px;
 }
+
 .contact_column2 img {
     vertical-align: middle;
     width: 18px;
     height: 18px;
     padding-right: 10px;
 }
+
 .contact_column3 {
     height: 152px;
     margin-top: 80px;
-    padding: 0px 15px;
+    /* padding: 0px 15px; */
+    justify-content: center;
 }
+
 .contact_column3 h5{
     font-size: 15px;
     color: #7c7c7c;
@@ -221,4 +244,329 @@ li, a{
     vertical-align: middle;
     margin: 0px;
     padding-top: 30px;
+}
+
+.welcome_veb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 179px 5% 0 5%;
+    line-height: 1.75;
+}
+
+.welcome_veb img {
+    width: 40%;
+    height: 350px;
+    margin: auto;
+}
+
+.welcome_veb h2 {
+    margin: auto;
+    padding-top: 75px;
+}
+
+.welcome_veb p {
+    width: 50%;
+    margin: auto;
+    padding-top: 40px;
+    color: #717171;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.welcome_veb a {
+    width: 260px;
+    height: 30px;
+    margin: 70px auto 0 auto;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #313131;
+    border: 1px solid #717171;
+    text-align: center;
+    padding-top: 10px;
+    letter-spacing: 0.15em;
+}
+
+.welcome_veb a:hover {
+    color: #fff;
+    background-color:#313131;
+    transition: .3s;
+}
+
+.dogs_icon_01 h6 {
+    position: absolute;
+    top: 1370px;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 200;
+    color: #c9adad;
+    font-weight: 300;
+}
+
+.dogs_icon_01 p {
+    position: absolute;
+    top: 1385px;
+    right: 10%;
+    text-align: end;
+    color: #c9adad;
+}
+
+.dulldog_profile {
+    width: 80%;
+    margin: 125px auto 0 auto;
+    background: #f7f7f4 url(assets/bulldog_img.jpg) right bottom no-repeat;
+    background-size: 25%;
+    padding-bottom: 100px;
+
+}
+
+.mid_line_bulldog {
+    width: 75px;
+    height: 5px;
+    margin-bottom: 30px;
+    margin:auto;
+    background: #983a42;
+    margin-top: 90px;
+}
+
+.dulldog_profile h3 {
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.breed_characteristics {
+    width: 100%;
+    padding: 0 0 0 10%;
+    font-size: 16px;
+}
+
+.breed_characteristics li {
+    padding: 50px 0 0 0;
+}
+
+.characteristic {
+    color: #983a42;
+    font-weight: 700;
+    padding-right: 15px;
+    word-spacing: 8px;
+}
+
+.choosisng {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    font-size: 16px;
+    margin: 130px auto 0 auto;
+    line-height: 1.75;
+    align-items: center;
+}
+
+.choosisng img {
+    width: 40%;
+    height: 380px;
+    margin: auto;
+}
+
+.choosisng h3 {
+    font-weight: 700;
+    margin-top: 75px;
+    letter-spacing: 0.15em;
+}
+
+.choosisng p {
+    width: 50%;
+    font-weight: 400;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dogs_icon_02 h6 {
+    position: absolute;
+    top: 3040px;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 200;
+    color: #c9adad;
+    font-weight: 300;
+}
+
+.dogs_icon_02 p {
+    position: absolute;
+    top: 3040px;
+    right: 10%;
+    text-align: end;
+    color: #c9adad;
+}
+
+/* .viem_and_buying_dogs {
+    width: 90%; */
+
+
+.buying_puppies {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 100px auto 0 auto;
+
+}
+
+.buying_dog_1 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+}
+
+.buying_dog_1 img {
+    width: 100%;
+}
+
+.buying_dog_1 h5 {
+    font-weight: 700;
+    word-spacing: 4px;
+    padding-top: 40px;
+}
+
+.buying_dog_1 p {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+
+.buying_dog_1 a {
+    width: 40%;
+    margin: 35px auto -27px auto;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 13px;
+    border: 1px solid #efefef;
+    text-align: center;
+    padding: 18px 0;
+    font-weight: 700;
+}
+
+.buying_dog_1 a:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.3s;
+}
+
+.buying_dog_2 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+}
+
+.buying_dog_2 img {
+    width: 100%;
+}
+
+.buying_dog_2 h5 {
+    font-weight: 700;
+    word-spacing: 4px;
+    padding-top: 40px;
+}
+
+.buying_dog_2 p {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+
+.buying_dog_2 a {
+    width: 40%;
+    margin: 35px auto -27px auto;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 13px;
+    border: 1px solid #efefef;
+    text-align: center;
+    padding: 18px 0;
+    font-weight: 700;
+}
+
+.buying_dog_2 a:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.3s;
+}
+
+.buying_dog_3 {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #efefef;
+}
+
+.buying_dog_3 img {
+    width: 100%;
+}
+
+.buying_dog_3 h5 {
+    font-weight: 700;
+    word-spacing: 4px;
+    padding-top: 40px;
+}
+
+.buying_dog_3 p {
+    padding-top: 20px;
+    font-size: 12px;
+    color: #c7c7c7;
+}
+
+.buying_dog_3 a {
+    width: 40%;
+    margin: 35px auto -27px auto;
+    color: black;
+    background-color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    font-size: 13px;
+    border: 1px solid #efefef;
+    text-align: center;
+    padding: 18px 0;
+    font-weight: 700;
+}
+
+.buying_dog_3 a:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.3s;
+}
+
+.view_dogs  {
+    width: 40%;
+    margin: 110px auto 0 auto;
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.view_dogs a {
+    color: #313131;
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    font-weight: 700;
+    border: 1px solid #313131;
+    padding: 19px 45px;
+}
+
+.view_dogs a:hover {
+    color: #fff;
+    background-color: #313131;
+    transition: 0.3s;
 }
