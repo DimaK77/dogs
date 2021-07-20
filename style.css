@@ -1,15 +1,3 @@
-/* .menu-bar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border: 62px solid #eaeaea;
-    font-family: 'Montserrat', sans-serif;
-    min-width: 1200px;
-    line-height: 1.75;
-    letter-spacing: 0.15em;
-} */
-
 .page-wrapper {
     width: 100%;
     background-color: #eaeaea;
@@ -45,22 +33,23 @@ li, a{
 
 .main-menu {
     display: flex;
-
 }
-.menu li{
+
+.menu li {
     display: flex;
     justify-content: flex-end;
     margin-left: 45px;
     padding-left: 50px;
     width: auto;
     float: left;
-  }
+}
 
 .menu a {
     color: #313131;
     line-height: 1.2;
     float: right;
-  } 
+} 
+
 .menu a:hover {
     color: #983a42;
 }
@@ -74,11 +63,10 @@ li, a{
     width: 90%;
     padding: 30px 5% 0 5%;
     height: 665px;
-    }
+}
 
 .heading {
     background: url(assets/dogh1.jpg) no-repeat;
-    /* background-size: contain; */
     background-size: cover;
     width: 80%;
     font-size: 46px;
@@ -98,16 +86,16 @@ li, a{
     color: #313131;
 }
 
-.heading2{
+.heading2 {
     color: #fff;
 }
 
-.heading3-5{
+.heading3-5 {
     display: flex;
     align-items: center;
 }
 
-.heading3{
+.heading3 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,7 +106,6 @@ li, a{
     background-color: #fff;
     border-radius: 50%;  
     margin-right: 10px;  
-   
 }
 
 .heading4 {
@@ -141,10 +128,12 @@ li, a{
     transition: .2s;
     padding-top: 100px;
 }
-.heading6 a{
+
+.heading6 a {
     color: #fff;
 }
-.heading6 p{
+
+.heading6 p {
     margin: 0px;
 }
 
@@ -154,19 +143,16 @@ li, a{
     justify-content: center;
     width: 17%;
     padding-left: 3%;
-    
 }
 
-.contact h4{
+.contact h4 {
     margin: 0px;
     font-size: 16px;
 }
 
-.contact_column1{
+.contact_column1 {
     height: 97px;
-    /* padding: 0px 15px; */
     justify-content: center;
-    
 }
 
 .contact_column1 ul {
@@ -198,7 +184,6 @@ li, a{
 .contact_column2 {
     display: flex;
     flex-direction: column;
-    /* padding: 0px 15px; */
     height: 145px;
     font-size: 18px;
     line-height: 1.75;
@@ -206,15 +191,17 @@ li, a{
     justify-content: center;
 }
 
-.contact_column2 a{
+.contact_column2 a {
     color: #983a42;
     text-decoration: none;
 }
+
 .contact_column2_tel {
     margin-top: 40px;
     display: flex;
     align-items: flex-start;
 }
+
 .contact_column2_mail { 
     margin-top: 10px;
 }
@@ -229,7 +216,6 @@ li, a{
 .contact_column3 {
     height: 152px;
     margin-top: 80px;
-    /* padding: 0px 15px; */
     justify-content: center;
 }
 
@@ -319,7 +305,6 @@ li, a{
     background: #f7f7f4 url(assets/bulldog_img.jpg) right bottom no-repeat;
     background-size: 25%;
     padding-bottom: 100px;
-
 }
 
 .mid_line_bulldog {
@@ -404,16 +389,11 @@ li, a{
     color: #c9adad;
 }
 
-/* .viem_and_buying_dogs {
-    width: 90%; */
-
-
 .buying_puppies {
     display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 100px auto 0 auto;
-
 }
 
 .buying_dog_1 {
