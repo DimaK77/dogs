@@ -138,11 +138,8 @@ li, a{
 }
 
 .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 17%;
-    padding-left: 3%;
+    padding: 5% 0 5% 3%;
 }
 
 .contact h4 {
@@ -236,6 +233,7 @@ li, a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     width: 90%;
     margin: 179px 5% 0 5%;
     line-height: 1.75;
@@ -283,7 +281,7 @@ li, a{
 
 .dogs_icon_01 h6 {
     position: absolute;
-    top: 1370px;
+    top: 290px;
     right: 10%;
     font-size: 30px;
     font-weight: 200;
@@ -293,7 +291,7 @@ li, a{
 
 .dogs_icon_01 p {
     position: absolute;
-    top: 1385px;
+    top: 290px;
     right: 10%;
     text-align: end;
     color: #c9adad;
@@ -325,8 +323,7 @@ li, a{
 }
 
 .breed_characteristics {
-    width: 100%;
-    padding: 0 0 0 10%;
+    padding: 0 10% 0 10%;
     font-size: 16px;
 }
 
@@ -345,6 +342,7 @@ li, a{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     width: 90%;
     font-size: 16px;
     margin: 130px auto 0 auto;
@@ -373,7 +371,7 @@ li, a{
 
 .dogs_icon_02 h6 {
     position: absolute;
-    top: 3040px;
+    top: 330px;
     right: 10%;
     font-size: 30px;
     font-weight: 200;
@@ -383,7 +381,7 @@ li, a{
 
 .dogs_icon_02 p {
     position: absolute;
-    top: 3040px;
+    top: 330px;
     right: 10%;
     text-align: end;
     color: #c9adad;
@@ -391,8 +389,7 @@ li, a{
 
 .buying_puppies {
     display: flex;
-    justify-content: space-between;
-    width: 90%;
+    justify-content: space-around;
     margin: 100px auto 0 auto;
 }
 
