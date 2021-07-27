@@ -547,3 +547,28 @@ li, a{
     background-color: #313131;
     transition: 0.3s;
 }
+
+.anchor_top {
+    position: absolute;
+    top: 0px;
+}
+
+.anchor_icon a {
+    width: 57px;
+    height: 57px;
+    font-size: 40px;
+    line-height: 55px;
+    writing-mode: vertical-rl;
+    text-align: center;
+    color: #eaeaea;
+    background-color: black;
+    border-radius: 50%;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.anchor_icon a:hover {
+    background-color: brown;
+    transition: 0.3s;
+}
